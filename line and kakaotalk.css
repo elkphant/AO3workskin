@@ -1,0 +1,401 @@
+/*隱藏內容，以便關閉work skin的讀者閱讀*/
+.hide {
+  display: none;
+}
+
+/*==LINE介面==*/
+.line {
+  color: #000;
+  background-color: #849ec0;
+  width: 80%;
+  max-width: 360px;
+  min-width: 300px;
+  display: table;
+  margin: auto;
+}
+
+div.line>.left,
+div.line>.right {
+  max-width: 70%;
+}
+
+/*聊天對象*/
+.line .header {
+  color: #252f4a;
+  font-weight: bold;
+  padding: .5em .75em;
+  margin: 0 0 .25em;
+}
+
+/*聊天內容*/
+/*--小字通知--*/
+.line .caption {
+  float: none;
+  clear: both;
+  position: relative;
+  max-width: max-content;
+  text-align: center;
+  color: #fff;
+  background-color: #7791b7;
+  font-weight: bold;
+  font-size: 14px;
+  margin: .25em auto;
+  padding: .25em .5em;
+  border-radius: 1em;
+}
+
+/*--收到的訊息--*/
+.line .left {
+  float: left;
+  clear: both;
+  display: block;
+  position: relative;
+  text-align: left;
+  font-size: initial;
+  color: #000;
+  background-color: #fff;
+  margin: .25em 0 .25em .5em;
+  padding: .5em .75em;
+  border-radius: 1.25em;
+}
+
+.line .left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .8em;
+  height: .2em;
+  top: 0;
+  left: 0;
+  border-bottom: .4em solid #fff;
+  border-bottom-left-radius: .8em;
+}
+
+/*--發送的訊息--*/
+.line .right {
+  float: right;
+  clear:both;
+  position: relative;
+  font-size: initial;
+  background-color: #b2ed8b;
+  margin: .25em .5em .25em 0;
+  padding: .5em .75em;
+  border-radius: 1.25em;
+}
+
+.line .right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .8em;
+  height: .2em;
+  top: 0;
+  right: 0;
+  border-bottom: .4em solid #b2ed8b;
+  border-bottom-right-radius: .8em;
+}
+
+/*--時間戳&讀取回條--*/
+.line .timestamp,
+.line .readreceipt {
+  color: #384463;
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  bottom: .2em;
+}
+
+.line .left .timestamp {
+  right: -3px;
+  transform: translate(100%, 0);
+}
+
+.line .right .timestamp {
+  left: -3px;
+  transform: translate(-100%, 0);
+}
+
+.line .readreceipt {
+  left: -3px;
+  transform: translate(-100%, -95%);
+}
+
+/*--取消小尾巴--*/
+.line .notail:before,
+.line .notail:after {
+  border: none;
+}
+
+/*群組介面*/
+.line .group {
+  margin-top: 1.5em;
+}
+
+.line .member {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0,-110%);
+  font-size: 15px;
+  color: #384463;
+}
+
+/*發送圖片*/
+.line .picture {
+  padding: 0 !important;
+  background-color: unset !important;
+}
+
+.line .picture:before,
+.line .picture:after {
+  border: none !important;
+}
+
+/*圖片格式*/
+.line img {
+  width: 100%;
+  max-width: 252px;
+  min-width: 210px;
+  border-radius: 1em;
+}
+
+/*表情貼*/
+.line img.emoji {
+  max-width: unset;
+  min-width: unset;
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+/*回覆(引用)訊息*/
+.line .reply .name {
+  font-weight: bold;
+  display: block;
+}
+
+.line .reply {
+  font-size: 85%;
+  font-style: normal;
+  display: block;
+  padding: 0 0 .25em 2em;
+  margin: 0 0 .5em 0;
+  border-inline-start: none;
+  border-bottom: 1px solid #00000033;
+}
+
+.line .reply>p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line div.right>p,
+.line div.left>p {
+  margin: 0;
+}
+
+.line .reply:before {
+  content: '';
+  background: #000;
+  background-size: contain;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+}
+
+.line .reply.character2:before {
+  content: '';
+  background: url(https://cdn.pixabay.com/photo/2024/01/13/00/46/raccoon-8504925_1280.png);
+  background-size: contain;
+}
+
+/*==KakaoTalk介面==*/
+.kakaotalk {
+  color: #000;
+  background-color: #a9bfd7;
+  width: 80%;
+  max-width: 360px;
+  min-width: 300px;
+  display: table;
+  margin: auto;
+}
+
+div.kakaotalk>.left,
+div.kakaotalk>.right {
+  max-width: 65%;
+}
+
+/*聊天對象*/
+.kakaotalk .header {
+  color: #000;
+  font-weight: bold;
+  padding: .5em .75em;
+  margin: 0 0 .25em;
+}
+
+.kakaotalk .header .group {
+  color: #f8ec37;
+  margin: 0 .25em;
+  font-size: 15px;
+}
+
+/*聊天內容*/
+/*--小字通知--*/
+.kakaotalk .caption {
+  float: none;
+  clear: both;
+  position: relative;
+  max-width: max-content;
+  text-align: center;
+  color: #5d7088;
+  font-weight: bold;
+  font-size: 14px;
+  margin: .25em auto;
+  padding: .25em .5em;
+}
+
+.kakaotalk .caption:before,
+.kakaotalk .caption:after {
+  content: "────";
+  display: inline-block;
+  margin: auto .25em;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+/*--收到的訊息--*/
+.kakaotalk .left {
+  float: left;
+  clear: both;
+  display: block;
+  position: relative;
+  text-align: left;
+  font-size: initial;
+  color: #000;
+  background-color: #fff;
+  margin: .25em 0 .25em .5em;
+  padding: .5em .75em;
+  border-radius: .2em;
+}
+
+.kakaotalk .left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: .4em;
+  left: -.4em;
+  border: .6em solid transparent;
+  border-top: .6em solid #fff;
+}
+
+/*--發送的訊息--*/
+.kakaotalk .right {
+  float: right;
+  clear:both;
+  position: relative;
+  font-size: initial;
+  background-color: #f8ec37;
+  margin: .25em .5em .25em 0;
+  padding: .5em .75em;
+  border-radius: .2em;
+}
+
+.kakaotalk .right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: .4em;
+  right: -.4em;
+  border: .6em solid transparent;
+  border-top: .6em solid #f8ec37;
+}
+
+/*--時間戳&讀取回條--*/
+.kakaotalk .timestamp,
+.kakaotalk .readreceipt {
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  bottom: .2em;
+  width: max-content;
+}
+
+.kakaotalk .timestamp {
+  color: #5d7088;
+}
+.kakaotalk .readreceipt {
+  color: #f8ec37;
+}
+
+.kakaotalk .left .timestamp {
+  right: -3px;
+  transform: translate(100%, 0);
+}
+
+.kakaotalk .right .timestamp {
+  left: -3px;
+  transform: translate(-100%, 0);
+}
+
+.kakaotalk .right .readreceipt {
+  left: -3px;
+  transform: translate(-100%, -95%);
+}
+
+.kakaotalk .left .readreceipt {
+  right: -3px;
+  transform: translate(100%, -95%);
+}
+
+/*--取消小尾巴--*/
+.kakaotalk .notail:before,
+.kakaotalk .notail:after {
+  border: none;
+}
+
+/*群組介面*/
+.kakaotalk .group {
+  margin-top: 1.5em;
+}
+
+.kakaotalk .member {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0,-110%);
+  font-size: 15px;
+  color: #5d7088;
+}
+
+/*發送圖片*/
+.kakaotalk .picture {
+  padding: 0 !important;
+  background-color: unset !important;
+}
+
+.kakaotalk .picture:before,
+.kakaotalk .picture:after {
+  border: none !important;
+}
+
+/*圖片格式*/
+.kakaotalk img {
+  width: 100%;
+  max-width: 234px;
+  min-width: 195px;
+  border-radius: .2em;
+}
+
+/*表情貼*/
+.kakaotalk img.emoji {
+  max-width: unset;
+  min-width: unset;
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
