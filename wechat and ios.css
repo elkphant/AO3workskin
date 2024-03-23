@@ -1,0 +1,317 @@
+/*隱藏內容，以便關閉work skin的讀者閱讀*/
+.hide {
+  display: none;
+}
+
+/*==微信介面==*/
+.wechat {
+  color: #000;
+  background-color: #ebebeb;
+  width: 80%;
+  max-width: 360px;
+  min-width: 300px;
+  display: table;
+  margin: auto;
+}
+
+/*聊天對象*/
+.wechat .header {
+  text-align: center;
+  padding: .5em;
+  margin: 0 0 .25em;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/*聊天內容*/
+/*--小字通知--*/
+.wechat .caption {
+  float: none;
+  clear: both;
+  position: relative;
+  max-width: max-content;
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 75%;
+  margin: .25em auto;
+  padding: .25em .5em;
+  border-radius: .5em;
+}
+
+/*--收到的訊息--*/
+.wechat .left {
+  float: left;
+  clear: both;
+  position: relative;
+  font-size: initial;
+  max-width: 70%;
+  background-color: #fff;
+  margin: .25em 0 .25em .75em;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.wechat .left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: .75em;
+  border: .5em solid transparent;
+  border-right: .75em solid #fff;
+  left: -1em;
+}
+
+/*--發送的訊息--*/
+.wechat .right {
+  float: right;
+  clear:both;
+  position: relative;
+  font-size: initial;
+  max-width: 70%;
+  background-color: #95ec69;
+  margin: .25em .75em .25em 0;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.wechat .right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: .75em;
+  border: .5em solid transparent;
+  border-left: .75em solid #95ec69;
+  right: -1em;
+}
+
+/*群聊介面*/
+.wechat .sender {
+  float: left;
+  clear: both;
+  position: relative;
+  max-width: 75%;
+  color: #848484;
+  font-size: 85%;
+  text-align: left;
+  margin: .25em 0 0 .75em;
+}
+
+.wechat .sender .left {
+  float: none;
+  max-width: unset;
+  margin: 0 0 .25em;
+  color: #000;
+  text-align: left;
+  display: block;
+}
+
+
+/*==iOS介面==*/
+.ios {
+  color: #000;
+  background-color: #fff;
+  width: 80%;
+  max-width: 360px;
+  min-width: 300px;
+  display: table;
+  margin: auto;
+}
+
+/*聊天對象*/
+.ios .header {
+  text-align: center;
+  color: #000;
+  background-color: #f3f3f3;
+  padding: .5em;
+  margin: 0 0 .25em;  
+  border-bottom: 1px solid #cbcbcb;
+}
+
+/*聊天內容*/
+/*--小字通知--*/
+.ios .caption {
+  float: none;
+  clear: both;
+  position: relative;
+  max-width: max-content;
+  text-align: center;
+  color: #9a9a9a;
+  font-weight: bold;
+  font-size: 75%;
+  margin: .25em auto;
+  padding: .25em .5em;
+  border-radius: .5em;
+}
+
+/*--收到的訊息--*/
+.ios .left {
+  float: left;
+  clear: both;
+  position: relative;
+  font-size: initial;
+  max-width: 70%;
+  background-color: #e4e4e6;
+  margin: .25em 0 .25em .5em;
+  padding: .5em .75em;
+  border-radius: 1em;
+}
+
+.ios .left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .5em;
+  height: 1em;
+  bottom: .0;
+  border-right: .5em solid #e5e5ea;
+  border-bottom-right-radius: 1em .5em;
+  left: -.5em;
+}
+
+/*--發送的訊息--*/
+.ios .right {
+  float: right;
+  clear:both;
+  position: relative;
+  font-size: initial;
+  max-width: 70%;
+  color: #fff;
+  background-color: #0f82ff;
+  margin: .25em .5em .25em 0;
+  padding: .5em .75em;
+  border-radius: 1em;
+}
+
+.ios .right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .5em;
+  height: 1em;
+  bottom: 0;
+  border-left: .5em solid #0f82ff;
+  border-bottom-left-radius: 1em .5em;
+  right: -.5em;
+}
+
+/*--縮短底部間距、取消小尾巴--*/
+.ios .notail {
+  margin-bottom: 0;
+}
+.ios .notail:before,
+.ios .notail:after {
+  border: none;
+}
+
+/*--仿iOS SMS綠色氣泡--*/
+.ios .green {
+  background-color: #5ada5e;
+}
+.ios .green:after {
+  border-color: #5ada5e;
+}
+
+/*--增加讀取回條--*/
+.ios .wrr {
+  margin-bottom: 1.25em;
+}
+
+/*讀取回條小字*/
+.ios .readreceipt {
+  color: #848484; /*這裡可改成藍色#0f82ff*/
+  font-weight: bold;
+  font-size: 70%;
+  text-align: right;
+  margin: 0 1em .25em;
+  position: absolute;
+  bottom: -1.75em;
+  right: -1em;
+}
+
+/*群聊介面*/
+.ios .sender {
+  float: left;
+  clear: both;
+  position: relative;
+  max-width: 75%;
+  color: #848484;
+  font-size: 85%;
+  text-align: left;
+  margin: .25em 0 .25em 1.5em;
+}
+
+.ios .sender .left {
+  float: none;
+  max-width: unset;
+  margin: 0 0 .25em -.75em;
+  color: #000;
+  text-align: left;
+  display: block;
+}
+
+/*==插入圖片==*/
+.wechat img,
+.ios img {
+  width: 100%;
+  max-width: 252px;
+  min-width: 216px;
+}
+
+/*邊框半徑*/
+.wechat img {
+  border-radius: .5em;
+}
+.ios img {
+  border-radius: 1em;
+}
+
+.picture {
+  margin: .25em 0;
+  padding: 0 !important;
+  background-color: unset !important;
+}
+.picture:before,
+.picture:after {
+  border: none !important;
+}
+
+.ios .sender.picture img {
+  margin: 0 0 0 -1em;
+}
+
+/*表情*/
+img.emoji {
+  max-width: unset;
+  min-width: unset;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: bottom;
+}
+
+/*==引用樣式==*/
+.wechat blockquote.reply {
+  border-inline-start: none;
+}
+
+.wechat blockquote.reply>p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.wechat .reply {
+  color: #848484;
+  background-color: #e1e1e1;
+  font-size: 85%;
+  max-width: 252px;
+  margin-top: 0;
+}
+
+.wechat .reply:before,
+.wechat .reply:after {
+  border: none;
+}
