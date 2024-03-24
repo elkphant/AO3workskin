@@ -45,7 +45,7 @@ def add_html_tags(text, right_role, group_format):
 				html_output += f'<p class="header">{line}</p>\n'
 			else:
 				html_output += f'<p class="caption">{line}</p>\n'
-	html_output = '<div class="line">\n' + html_output + '</div>\n' # 格式是一樣的，需要kakaotalk的版本修改這一行的line就行
+	html_output = '<div class="line">\n' + html_output + '</div>\n' # 格式差不多，需要kakaotalk的版本基本上只要修改這一行
 	return html_output
 
 # GUI setup
