@@ -5,7 +5,6 @@
 - [Dating app & Notification bar work skin](https://archiveofourown.org/works/50925736)
 - [微信作品皮膚 WeChat work skin](https://archiveofourown.org/works/53577484)
 - [LINE / KakaoTalk 作品介面 work skin](https://archiveofourown.org/works/54635311)
-
 前兩個我現在已經有點看不懂了所以沒有分享在這裡，開這個repository是因為我請Chat-GPT寫了個python的轉換文本程式，看起來如果怪怪的，不是我的鍋;)
   
 
@@ -21,3 +20,4 @@
 7. 右方輸入框出現添加HTML標籤的文本
 8. 點擊「複製」
 9. 貼在AO3的HTML編輯器裡，完成～
+這個只是快速套用的程式，如果要用回覆樣式，還是要手動調整
