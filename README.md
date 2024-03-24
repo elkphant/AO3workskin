@@ -6,9 +6,9 @@
 - [微信作品皮膚 WeChat work skin](https://archiveofourown.org/works/53577484)
 - [LINE / KakaoTalk 作品介面 work skin](https://archiveofourown.org/works/54635311)
 
-前兩個我現在已經有點看不懂了所以沒有分享在這裡，開這個repository是因為我請Chat-GPT寫了個python的轉換文本程式，看起來如果怪怪的，不是我的鍋;)
+前兩個我現在已經有點看不懂了所以沒有分享在這裡，開這個repository是因為我請Chat-GPT寫了個python的轉換文本程式，看起來如果很棒，是因為我很棒，看起來如果怪怪的，那就不是我的鍋了XD
+&nbsp;
 
-  
 ## 文本轉換工具-LINE
 1. 下載`文本轉換工具-LINE.exe`
 2. 選擇文本格式是「私訊」或「群組」
@@ -24,7 +24,7 @@
 9. 貼在AO3的HTML編輯器裡，完成～
 
 這只是快速套用程式，要用無小尾巴、貼上圖片或回覆的樣式，還是要手動調整！如果一定要用半形空格可以轉換後調整，或使用編碼`&nbsp;`，表情貼emoji則可以先在文本中輸入img標籤。
-  
+&nbsp;
 
 ## 文本轉換工具-WeChat
 1. 下載`文本轉換工具-WeChat.exe`
