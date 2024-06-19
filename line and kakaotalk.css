@@ -6,7 +6,7 @@
 /*==LINE介面==*/
 .line {
   color: #000;
-  background-color: #849ec0;
+  background-color: #849ec0; /*暗色版 #1a1a1a*/
   width: 80%;
   max-width: 360px;
   min-width: 300px;
@@ -21,7 +21,7 @@ div.line>.right {
 
 /*聊天對象*/
 .line .header {
-  color: #252f4a;
+  color: #252f4a; /*暗色版 #fff*/
   font-weight: bold;
   padding: .5em .75em;
   margin: 0 0 .25em;
@@ -36,7 +36,7 @@ div.line>.right {
   max-width: max-content;
   text-align: center;
   color: #fff;
-  background-color: #7791b7;
+  background-color: #7791b7; /*暗色版 #111*/
   font-weight: bold;
   font-size: 14px;
   margin: .25em auto;
@@ -52,8 +52,8 @@ div.line>.right {
   position: relative;
   text-align: left;
   font-size: initial;
-  color: #000;
-  background-color: #fff;
+  color: #000; /*暗色版 #fff*/
+  background-color: #fff; /*暗色版 #2a2a2a*/
   margin: .25em 0 .25em .5em;
   padding: .5em .75em;
   border-radius: 1.25em;
@@ -67,7 +67,7 @@ div.line>.right {
   height: .2em;
   top: 0;
   left: 0;
-  border-bottom: .4em solid #fff;
+  border-bottom: .4em solid #fff; /*暗色版 #2a2a2a*/
   border-bottom-left-radius: .8em;
 }
 
@@ -98,7 +98,7 @@ div.line>.right {
 /*--時間戳&讀取回條--*/
 .line .timestamp,
 .line .readreceipt {
-  color: #384463;
+  color: #384463; /*暗色版 #777*/
   font-size: 12px;
   margin: 0;
   position: absolute;
@@ -137,7 +137,7 @@ div.line>.right {
   left: 0;
   transform: translate(0,-110%);
   font-size: 15px;
-  color: #384463;
+  color: #384463; /*暗色版 #fff*/
 }
 
 /*發送圖片*/
