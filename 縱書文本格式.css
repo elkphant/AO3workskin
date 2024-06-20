@@ -1,0 +1,71 @@
+div.userstuff .vertical {
+	writing-mode: vertical-rl;
+	overflow: auto;
+	margin: 1.286em auto auto;
+	padding: 0 2.5% 1.286em;
+	max-width: 95%;
+	max-height: 90%;
+}
+
+div.userstuff .vertical h4 {
+	text-indent: 4em;
+	margin: auto 0.75em;
+}
+
+div.userstuff .vertical p {
+	text-indent: 2em;
+	margin: auto;
+}
+
+div.userstuff .vertical hr {
+	margin: auto 0.75em;
+	border: none;
+}
+
+div.userstuff .vertical hr::after {
+	display: block;
+	content: "＊";
+	text-indent: 4em;
+}
+
+div.userstuff .vertical-jp {
+	writing-mode: vertical-rl;
+	overflow: auto;
+	margin: 1.286em auto;
+	padding-right: 2.5%;
+	max-width: 95%;
+	max-height: 90%;
+	columns: 2;
+	column-gap: 20px;
+}
+
+div.userstuff .vertical-jp h4 {
+	text-indent: 2em;
+	margin: auto 0.75em;
+}
+
+div.userstuff .vertical-jp p {
+	text-indent: 1em;
+	margin: auto;
+}
+
+div.userstuff .vertical-jp hr {
+	margin: auto 0.75em;
+	border: none;
+}
+
+div.userstuff .vertical-jp hr::after {
+	display: block;
+	content: "＊";
+	text-indent: 2em;
+}
+
+div.userstuff .vertical .mixed,
+div.userstuff .vertical-jp .mixed {
+	text-orientation: mixed;
+}
+
+div.userstuff .vertical .upright,
+div.userstuff .vertical-jp .upright {
+	text-orientation: upright;
+}
