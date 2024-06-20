@@ -60,12 +60,10 @@ div.userstuff .vertical-jp hr::after {
 	text-indent: 2em;
 }
 
-div.userstuff .vertical .mixed,
-div.userstuff .vertical-jp .mixed {
-	text-orientation: mixed;
+.upright {
+	text-orientation: upright;
 }
 
-div.userstuff .vertical .upright,
-div.userstuff .vertical-jp .upright {
-	text-orientation: upright;
+.no-indent {
+	text-indent: 0;
 }
