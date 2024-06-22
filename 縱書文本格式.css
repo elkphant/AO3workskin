@@ -67,3 +67,90 @@ div.userstuff .vertical-jp hr::after {
 .no-indent {
 	text-indent: 0;
 }
+
+
+/*==以下更多補充==*/
+/*中文標點符號*/
+.vertical em,
+.vertical i {
+	font-style: normal;  /*調回正常值*/
+	text-decoration: underline;  /*類似中文專名號(置於字左的直線)*/
+}
+
+.vertical strong,
+.vertical b {
+	font-weight: normal;  /*調回正常值*/
+	text-emphasis: filled dot;  /*類似中文著重號(置於字右的點點)*/
+}
+
+/*日文標點符號*/
+.vertical-jp em,
+.vertical-jp i {
+	font-style: normal;  /*調回正常值*/
+	text-decoration: overline;  /*類似日文專名號(置於字右的直線)*/
+}
+
+.vertical-jp strong,
+.vertical-jp b {
+	font-weight: normal;  /*調回正常值*/
+	text-emphasis: filled;  /*類似日文著重號(置於字右的頓點)*/
+}
+
+/*----以出版書常見的字型更換顯示 (主要以微軟電腦測試，其他裝置系統無法提供建議)
+以下使用請參考AO3原文的說明 https://archiveofourown.org/works/56766427  ----*/
+.vertical {
+	font-family: "Noto Serif TC", "PMingLiU", serif;  /*內文新細明體*/
+}
+
+.vertical em,
+.vertical i {
+	font-style: normal;  /*調回正常值*/
+	font-family: "DFKai-SB", cursive, sans-serif;  /*斜體改用標楷體*/
+}
+/*標楷體、cursive很多裝置顯示不出中文，所以最後的通用字型選了無襯線體以便與內文區分*/
+
+.vertical strong,
+.vertical b {
+	font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;  /*粗體改用黑體*/
+}
+/*選用主要依據標點符號的表現，思源黑體可從google fonts下載*/
+
+/*選定單詞呈現橫式書寫效果，如日期、縮寫*/
+div.userstuff .vertical .date {
+	writing-mode: horizontal-tb;  /*改回橫書*/
+	text-orientation: upright;  /*文字直立顯示*/
+	text-indent: 0;  /*刪去縮排*/
+}
+
+/*書信結語標示*/
+div.userstuff .vertical .no-indent {
+	text-indent: 0;
+}
+
+div.userstuff .vertical .footer {
+	text-indent: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+div.userstuff .vertical .footer * {
+	text-indent: 0;
+	margin: 0;
+	line-height: 1.5;  /*行高會決定右邊距的一行寬度，在此設為AO3的預設值確保不受讀者的網站主題影響*/
+}
+
+div.userstuff .vertical .footer >*:nth-of-type(1) {
+	margin-right: 0;
+}
+
+div.userstuff .vertical .footer >*:nth-of-type(2) {
+	margin-right: 1.5em;
+}
+
+div.userstuff .vertical .footer >*:nth-of-type(3) {
+	margin-right: 3em;
+}
+
+div.userstuff .vertical .footer >*:nth-of-type(4) {
+	margin-right: 4.5em;  /*依此類推*/
+}
