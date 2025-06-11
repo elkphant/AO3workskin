@@ -1,0 +1,170 @@
+/*使用到的顏色有這些
+凸顯黃色#f5cb5c
+標題淺色底#cfdbd5、文字及更深底色#242423
+淺色文字及頭像底色#e8eddf、主要底色#333533*/
+
+.hide {
+	display: none !important;
+}
+
+/*設定整體寬度*/
+.forum {
+	display: block;
+	width: 80%;
+	min-width: 22em;
+	max-width: 54em;
+	margin: auto;
+}
+
+/*導航區塊*/
+.forum:before {
+	content: "首頁 » 母版 » 子版"; /*在這裡修改論壇名稱，半形大於>不適用*/
+	display: block;
+	margin: 10px 0;
+	font-size: small;
+	cursor: pointer;
+}
+
+/*標題或主旨*/
+.forum .title {
+	padding: .5em 1em;
+	margin: auto;
+	font-weight: bold;
+	color: #242423;
+	background: #cfdbd5;
+	border: none;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+/*每層樓背景*/
+.forum .post {
+	display: block;
+	margin: 10px 0;
+	color: #e8eddf;
+	background: #333533;
+	border-radius: 16px;
+}
+
+/*每層樓結尾*/
+.forum .post:after {
+	content: "檢舉｜引用";
+	display: block;
+	padding: 2px 10px;
+	font-size: smaller;
+	text-align: right;
+	color: #e8eddf;
+	background: #242423;
+	border-radius: 0 0 16px 16px;
+	cursor: pointer;
+}
+
+/*發文或回覆者*/
+.post .userbox,
+.post .user {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-weight: normal;
+	width: 100%;
+	height: 30px;
+	color: #e8eddf;
+	background: #242423;
+	border-radius: 16px 16px 0 0;
+}
+
+/*使用者ID、時間與樓層*/
+.post .userbox * {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 5px;
+	white-space: nowrap;
+}
+
+.post .user * {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 5px;
+	white-space: nowrap;
+}
+
+.post .userbox span,
+.post .user span {
+	overflow-wrap: anywhere;
+	white-space: wrap !important;
+}
+
+.post .userbox small,
+.post .user small {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 0 10px 0 0;
+}
+
+/*樓層*/
+.post .userbox .floor,
+.post .user .floor {
+	padding: 5px;
+	margin: 2px;
+	color: #e8eddf;
+	background: #333533;
+	border-radius: 16px;
+	line-height: 1;
+}
+
+/*內文*/
+.post .content {
+	margin: 10px 20px;
+}
+
+.post .content p {
+	margin: 15px auto;
+}
+
+/*頭像樣式*/
+.post .userbox > :first-child:before {
+	content: "";
+	margin: 0 5px -15px;
+	width: 45px;
+	height: 45px;
+	background: #e8eddf url(/images/ao3_logos/logo_42.png) no-repeat center; /*圖片替換url(網址)*/
+	background-size: contain;
+	border: 5px solid #242423;
+	border-radius: 100%;
+}
+
+/*====新增頭像選擇器====*/
+.post .userbox .op:before {
+	background: #f5cb5c;
+}
+
+.post .userbox .character1:before {
+    background-image: url(/images/ao3_logos/logo_42.png);
+}
+
+/*其他使用標籤*/
+.forum a {
+	color: #f5cb5c;
+	text-decoration: underline;
+}
+
+.forum a:hover {
+	color: #333533;
+	background: #f5cb5c;
+}
+
+.forum blockquote {
+	margin-left: 12px;
+	border-color: #f5cb5c;
+}
+
+.forum table {
+  overflow-wrap: anywhere;
+}
+
+.forum tbody tr:nth-child(even) {
+  background-color: #333533;
+  color: #f5cb5c;
+}
