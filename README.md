@@ -8,6 +8,8 @@
 - [縱書文本格式 Vertical Writing work skin](https://archiveofourown.org/works/56766427)
 - [論壇體 Forum work skin](https://archiveofourown.org/works/59205550)
 
+&nbsp;
+
 ## 文本轉換工具
 開這個 repository 是因為我請 ChatGPT 寫了兩個聊天體的 python 轉換文本程式。看起來如果很棒，是因為我很棒，看起來如果怪怪的，那不是我的問題XDD
 
@@ -29,6 +31,8 @@
 9. 貼在 AO3 的 HTML 編輯器裡，完成～
 
 一定要用半形空格可以轉換後調整，或使用 HTML 編碼`&nbsp;`；表情貼 emoji 則可以先在文本中輸入 img 標籤，如`test.txt`範例。
+
+&nbsp;
 
 ### WeChat 版本
 1. 下載 `文本轉換工具-WeChat.exe`
