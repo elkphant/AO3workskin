@@ -1,0 +1,406 @@
+/*隱藏內容，以便關閉 work skin 的讀者閱讀*/
+.hide {
+  display: none;
+}
+
+/*==微信介面==*/
+.wechat {
+  color: #000;
+  background-color: #ebebeb;
+  width: 80%;
+  max-width: 420px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 4px;
+}
+
+/*聊天對象*/
+.wechat .header {
+  border-bottom: 1px solid #cbcbcb;
+  margin: 0 0 4px;
+  padding: 8px 12px;
+
+}
+
+/*聊天內容*/
+/*--小字通知--*/
+.wechat .caption {
+  font-size: 14px;
+  max-width: max-content;
+  color: #7a7a7a;
+  margin: 4px auto;
+  border-radius: .5em;
+}
+
+/*--訊息--*/
+.wechat .left,
+.wechat .right {
+  font-size: initial;
+  max-width: 70%;
+  position: relative;
+  margin: 4px 12px;
+  padding: 8px;
+  border-radius: .5em;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.wechat .left:before,
+.wechat .right:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  border: 8px solid transparent;
+  z-index: -1;
+}
+
+.wechat .left {
+  background-color: #fff;
+  align-self: self-start;
+}
+
+.wechat .left:before {
+  left: -14px;
+  border-right: 12px solid #fff;
+}
+
+.wechat .right {
+  background-color: #95ec69;
+  align-self: self-end;
+}
+
+.wechat .right:after {
+  right: -14px;
+  border-left: 12px solid #95ec69;
+}
+
+/*群聊介面*/
+.wechat .group {
+  margin-top: 24px;
+}
+
+.wechat .member {
+  font-size: 14px;
+  color: #848484;
+  position: absolute;
+  width: max-content;
+  top: 0;
+  left: -4px;
+  transform: translate(0,-110%);
+}
+
+/*==圖片==*/
+.picture {
+  padding: 0 !important;
+  background-color: unset !important;
+}
+
+.picture::before,
+.picture::after {
+  border: none  !important;
+}
+
+/*表情*/
+img.emoji {
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
+
+/*格式*/
+.picture img {
+  width: 100%;
+  border-radius: .5em;
+}
+
+/*==Scrollable 可滾動==*/
+.wechat .scrollable {
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.wechat .scrollable::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+}
+
+.wechat .scrollable::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+/*==Avatar 頭像==*/
+.left:has([class*="avatar"]) {
+  margin-left: 50px;
+}
+
+.right:has([class*="avatar"]) {
+  margin-right: 50px;
+}
+
+.avatar::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  border-radius: .5em;
+}
+
+.left .avatar::before {
+  left: -50px;
+}
+
+.right .avatar::before {
+  right: -50px;
+}
+
+.group .avatar::before {
+  top: -20px;
+}
+
+/*各角色頭像，依此類推新增*/
+.character1::before {
+  background: url(https://cdn.pixabay.com/photo/2024/07/08/05/41/girl-8880144_1280.png);
+  background-size: contain;
+}
+
+.character2::before {
+  background: url(https://cdn.pixabay.com/photo/2024/01/13/00/46/raccoon-8504925_1280.png);
+  background-size: contain;
+}
+
+.character3::before {
+  background: url(/images/skins/iconsets/default/icon_user.png);
+  background-size: contain;
+}
+
+/*==引用樣式==*/
+.reply {
+  font-size: 80%;
+  color: #848484;
+  background-color: #e1e1e1;
+  max-width: 65%;
+  margin: 0 12px 4px;
+  padding: 8px;
+  border-inline-start: none;
+  border-radius: .5em;
+}
+
+.reply>p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.left + .reply {
+  align-self: self-start;
+}
+
+.right + .reply {
+  align-self: self-end;
+}
+
+.left:has(span[class*="avatar"]) + .reply {
+  margin-left: 50px;
+}
+
+.right:has(span[class*="avatar"]) + .reply {
+  margin-right: 50px;
+}
+
+.reply img.emoji {
+  width: 18px;
+  height: 18px;
+}
+
+/*==At @==*/
+.wechat .mention {
+  color: #507ed3;
+  cursor: pointer;
+}
+
+.wechat a {
+  color: #507ed3;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+
+/*==iOS介面==*/
+.ios {
+  color: #000;
+  background-color: #fff;
+  width: 80%;
+  max-width: 420px;
+  min-width: 320px;
+  display: table;
+  margin: auto;
+}
+
+/*聊天對象*/
+.ios .header {
+  text-align: center;
+  color: #000;
+  background-color: #f3f3f3;
+  padding: .5em;
+  margin: 0 0 .25em;  
+  border-bottom: 1px solid #cbcbcb;
+}
+
+/*聊天內容*/
+/*--小字通知--*/
+.ios .caption {
+  float: none;
+  clear: both;
+  position: relative;
+  max-width: max-content;
+  text-align: center;
+  color: #9a9a9a;
+  font-weight: bold;
+  font-size: 75%;
+  margin: .25em auto;
+  padding: .25em .5em;
+  border-radius: .5em;
+}
+
+/*--收到的訊息--*/
+.ios .left {
+  float: left;
+  clear: both;
+  position: relative;
+  font-size: initial;
+  max-width: 70%;
+  background-color: #e4e4e4;
+  margin: .25em 0 .25em .5em;
+  padding: .5em .75em;
+  border-radius: 1em;
+}
+
+.ios .left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .5em;
+  height: 1em;
+  bottom: .0;
+  border-right: .5em solid #e4e4e4;
+  border-bottom-right-radius: 1em .5em;
+  left: -.5em;
+}
+
+/*--發送的訊息--*/
+.ios .right {
+  float: right;
+  clear:both;
+  position: relative;
+  font-size: initial;
+  max-width: 70%;
+  color: #fff;
+  background-color: #0f82ff;
+  margin: .25em .5em .25em 0;
+  padding: .5em .75em;
+  border-radius: 1em;
+}
+
+.ios .right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .5em;
+  height: 1em;
+  bottom: 0;
+  border-left: .5em solid #0f82ff;
+  border-bottom-left-radius: 1em .5em;
+  right: -.5em;
+}
+
+/*--縮短底部間距、取消小尾巴--*/
+.ios .notail {
+  margin-bottom: 0;
+}
+.ios .notail:before,
+.ios .notail:after {
+  border: none;
+}
+
+/*--仿iOS SMS綠色氣泡--*/
+.ios .green {
+  background-color: #5ada5e;
+}
+.ios .green:after {
+  border-color: #5ada5e;
+}
+
+/*--增加讀取回條--*/
+.ios .wrr {
+  margin-bottom: 1.25em;
+}
+
+/*讀取回條小字*/
+.ios .readreceipt {
+  color: #848484; /*這裡可改成藍色#0f82ff*/
+  font-weight: bold;
+  font-size: 70%;
+  text-align: right;
+  margin: 0 1em .25em;
+  position: absolute;
+  bottom: -1.75em;
+  right: -1em;
+}
+
+/*群聊介面*/
+.ios .sender {
+  float: left;
+  clear: both;
+  position: relative;
+  max-width: 75%;
+  color: #848484;
+  font-size: 85%;
+  text-align: left;
+  margin: .25em 0 .25em 1.5em;
+}
+
+.ios .sender .left {
+  float: none;
+  max-width: unset;
+  margin: 0 0 .25em -.75em;
+  color: #000;
+  text-align: left;
+  display: block;
+}
+
+/*==圖片==*/
+.ios .picture img,
+.ios .sender img.left {
+  width: 100%;
+  max-width: 252px;
+  min-width: 216px;
+  border-radius: 1em;
+  padding: 0;
+}
+
+.ios .picture:before,
+.ios .picture:after {
+  border: none !important;
+}
+
+/*表情*/
+.ios img.emoji {
+  max-width: unset;
+  min-width: unset;
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
